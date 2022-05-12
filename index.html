@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Monthly salary calculator</title>
+</head>
+<body class="align-h-center align-v-center">
+    <div class="container dp-02 align-h-center">
+        <h1 class="txt-center">ACME</h1>
+        <p class="subtitle txt-center">Weekly salary calculator</p>
+        <p class="instruction txt-center">Import the .txt file with the information to calculate salaries:</p>
+        
+        <div class="drop-element align-h-center align-v-center" id="drop-area">
+            <div id="initial-content">
+                <img src="/content/svg/upload.svg" alt="upload icon">
+                <p class="drop-instruction txt-center">Drag & drop your file here</p><br>
+                <p class="drop-instruction txt-center">OR</p>
+                <input type="file" name="file" id="file-selector" class="inputfile" />
+                <label for="file" class="btn txt-center">Choose a file</label>
+            </div>
+            <div id="processing">
+                <!-- <img src="/content/svg/error-illustration.svg" alt="error illustration">
+                <p class="drop-instruction txt-center">We can’t read this file. Please, use a simple text file (.txt)</p> -->
+            </div>
+            
+        </div>
+        <div class="result hidden" id="result-area">
+            <table>
+                <tr>
+                    <th>Employee</th>
+                    <th>Payment</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
